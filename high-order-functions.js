@@ -7,6 +7,7 @@ let times = [
     time_string: "10pm - Midnight",
     next_occurrence: "2017-07-15T21:09:09.000-07:00",
   },
+
   {
     id: 10621,
     day: 3,
