@@ -36,7 +36,6 @@ function getSmallestElementAtProperty(obj, key) {
   }
   return compare
 }
-
 var obj = {
   key: [2, 1, 5]
 };
