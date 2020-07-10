@@ -1,10 +1,8 @@
 var twoSum = function (nums, target) {};
 // https://leetcode.com/problems/two-sum/description/
 
-
 var maxSubArray = function (nums) {};
 // https://leetcode.com/problems/maximum-subarray/description/
-
 
 var moveZeroes = function (nums) {};
 // https://leetcode.com/problems/move-zeroes/description/
