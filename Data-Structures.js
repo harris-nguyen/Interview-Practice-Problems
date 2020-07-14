@@ -36,6 +36,8 @@ console.log(firstRecurringCharacter([2, 5, 9, 8, 2, 4, 5, 7, 9]));
 
 
 // Linked List
+// Prepend and append O(1)
+// Lookup, insert, and delete O(n)
 class LinkedList {
   constructor(value) {
     this.head = {
@@ -95,23 +97,34 @@ class LinkedList {
       next: null,
     };
 
-    const leader = this.traverseToIndex(index - 1);
+    const leader = this.traverseToIndex(index - 1); // grabbing 1st targeted index
     const holdingPointer = leader.next;
     leader.next = newNode;
     newNode.next = holdingPointer;
     this.length++;
-    return this.printList();
+    return this;
   }
 
   traverseToIndex(index) {
-    let counter = 0;
+    let counter = 0; // counting index
     let currentNode = this.head;
 
     while (counter !== index) {
       currentNode = currentNode.next;
+
       counter++;
     }
     return currentNode;
+  }
+
+  remove(index) {
+    // not included so later, include conditional. if positive, negative, etc
+
+    const leader = this.traverseToIndex(index - 1);
+    const unwantedNode = leader.next;
+    leader.next = unwantedNode.next // leader.next overwriting unwantedNode.next. therefore unwantedNode.next is deleted
+    this.length--;
+    return this;
   }
 }
 
@@ -120,5 +133,6 @@ myLinkedList.append(5);
 myLinkedList.append(16);
 myLinkedList.prepend(1);
 myLinkedList.insert(2, 99);
+myLinkedList.remove(2);
 console.log(myLinkedList.printList());
 console.log(myLinkedList);
