@@ -157,7 +157,7 @@ class DoublyLinkedList {
       previous: null,
     };
 
-    newNode.previous = this.tail; // the reference
+    newNode.previous = this.tail;
     this.tail.next = newNode;
     this.tail = newNode;
     this.length++;
@@ -170,6 +170,7 @@ class DoublyLinkedList {
       previous: null,
       next: null,
     };
+
     newNode.next = this.head;
     this.head.previous = newNode;
     this.head = newNode;
@@ -203,13 +204,16 @@ class DoublyLinkedList {
       previous: null,
       next: null,
     };
+    // example: myLinkedList.insert(2, 99)
+    // [ 1, 10, 5, 16 ]
+    const leader = this.traverseToIndex(index - 1); // key of 10
+    const follower = leader.next; // key of 5
 
-    const leader = this.traverseToIndex(index - 1); // grabbing 1st targeted index
-    const follower = leader.next;
-    leader.next = newNode;
-    newNode.previous = leader;
-    newNode.next = follower;
-    follower.previous = newNode;
+    leader.next = newNode; // to insert key of 99 will overwrite key of 5
+    newNode.previous = leader; // setting prev to key of 10
+    newNode.next = follower; // setting null to reference key of 5
+    follower.previous = newNode; // setting prev to newNode 99
+    // result [ 1, 10, 99, 5, 16 ]
     this.length++;
     return this;
   }
@@ -229,13 +233,16 @@ class DoublyLinkedList {
   remove(index) {
     // not included so later, include conditional. if positive, negative, etc
 
-    const leader = this.traverseToIndex(index - 1);
-    const unwantedNode = leader.next;
-    const follower = unwantedNode.next;
+    // example: myLinkedList.insert(2, 99)
+    // [ 1, 10, 99, 5, 16 ]
+    const leader = this.traverseToIndex(index - 1); // key of 10
+    const unwantedNode = leader.next; // key of 99
+    const follower = unwantedNode.next; // 5
 
-    leader.next = follower;
-    follower.previous = leader;
+    leader.next = follower; // key of 5 overwrites key of 99
+    follower.previous = leader; // prev set to key of 10
     this.length--;
+    // result [ 1, 10, 5, 16 ]
     return this;
   }
 }
