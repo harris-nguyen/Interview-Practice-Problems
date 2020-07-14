@@ -38,6 +38,7 @@ console.log(firstRecurringCharacter([2, 5, 9, 8, 2, 4, 5, 7, 9]));
 // Linked List
 // Prepend and append O(1)
 // Lookup, insert, and delete O(n)
+// Uses less memory compared to doubly linkedlist
 class LinkedList {
   constructor(value) {
     this.head = {
@@ -139,6 +140,10 @@ console.log(myLinkedList);
 
 
 // Doubly LinkedList
+// Prepend and append O(1)
+// Lookup, insert, and delete O(n)
+// Use this over single linkedlist when you have more memory
+// Big diff compared to single list is 'previous'
 class DoublyLinkedList {
   constructor(value) {
     this.head = {
@@ -245,6 +250,27 @@ class DoublyLinkedList {
     // result [ 1, 10, 5, 16 ]
     return this;
   }
+
+  reverse(){
+    // you can also use this.length === 1
+    if(!this.head.next){
+      return this.head
+    }
+
+    let first = this.head
+    this.tail = this.head
+    let second = first.next
+
+    while(second){
+      const temp = second.next // third number
+      second.next = first
+      first = second
+      second = temp
+    }
+    this.head.next = null
+    this.head = first
+    return this
+  }
 }
 
 const myLinkedList = new DoublyLinkedList(10);
@@ -253,5 +279,6 @@ myLinkedList.append(16);
 myLinkedList.prepend(1);
 myLinkedList.insert(2, 99);
 myLinkedList.remove(2);
+myLinkedList.reverse()
 console.log(myLinkedList.printList());
 console.log(myLinkedList);
