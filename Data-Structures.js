@@ -279,6 +279,6 @@ myLinkedList.append(16);
 myLinkedList.prepend(1);
 myLinkedList.insert(2, 99);
 myLinkedList.remove(2);
-myLinkedList.reverse()
+console.log("reverse:", myLinkedList.reverse());
 console.log(myLinkedList.printList());
 console.log(myLinkedList);
