@@ -17,8 +17,9 @@ var containsDuplicate = function (nums) {};
 var rotate = function (nums, k) {};
 // https://leetcode.com/problems/rotate-array/description/
 
-
-// O(n) and faster
+// Hash Table
+// space O(n)
+// insert, lookup, & delete O(1)
 function firstRecurringCharacter(input) {
   let map = {};
   for (let i = 0; i < input.length; i++) {
