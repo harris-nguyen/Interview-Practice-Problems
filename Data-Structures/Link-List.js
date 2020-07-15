@@ -1,40 +1,3 @@
-var twoSum = function (nums, target) {};
-// https://leetcode.com/problems/two-sum/description/
-
-
-var maxSubArray = function (nums) {};
-// https://leetcode.com/problems/maximum-subarray/description/
-
-
-var moveZeroes = function (nums) {};
-// https://leetcode.com/problems/move-zeroes/description/
-
-
-var containsDuplicate = function (nums) {};
-// https://leetcode.com/problems/contains-duplicate/description/
-
-
-var rotate = function (nums, k) {};
-// https://leetcode.com/problems/rotate-array/description/
-
-// Hash Table
-// space O(n)
-// insert, lookup, & delete O(1)
-function firstRecurringCharacter(input) {
-  let map = {};
-  for (let i = 0; i < input.length; i++) {
-    if (map[input[i]] !== undefined) {
-      return input[i];
-    } else {
-      map[input[i]] = i;
-    }
-    console.log(map);
-  }
-  return undefined;
-}
-console.log(firstRecurringCharacter([2, 5, 9, 8, 2, 4, 5, 7, 9]));
-
-
 // Linked List
 // Prepend and append O(1)
 // Lookup, insert, and delete O(n)
@@ -123,7 +86,7 @@ class LinkedList {
 
     const leader = this.traverseToIndex(index - 1);
     const unwantedNode = leader.next;
-    leader.next = unwantedNode.next // leader.next overwriting unwantedNode.next. therefore unwantedNode.next is deleted
+    leader.next = unwantedNode.next; // leader.next overwriting unwantedNode.next. therefore unwantedNode.next is deleted
     this.length--;
     return this;
   }
@@ -137,7 +100,6 @@ myLinkedList.insert(2, 99);
 myLinkedList.remove(2);
 console.log(myLinkedList.printList());
 console.log(myLinkedList);
-
 
 // Doubly LinkedList
 // Prepend and append O(1)
@@ -251,25 +213,25 @@ class DoublyLinkedList {
     return this;
   }
 
-  reverse(){
+  reverse() {
     // you can also use this.length === 1
-    if(!this.head.next){
-      return this.head
+    if (!this.head.next) {
+      return this.head;
     }
 
-    let first = this.head
-    this.tail = this.head
-    let second = first.next
+    let first = this.head;
+    this.tail = this.head;
+    let second = first.next;
 
-    while(second){
-      const temp = second.next // third number
-      second.next = first
-      first = second
-      second = temp
+    while (second) {
+      const temp = second.next; // third number
+      second.next = first;
+      first = second;
+      second = temp;
     }
-    this.head.next = null
-    this.head = first
-    return this
+    this.head.next = null;
+    this.head = first;
+    return this;
   }
 }
 
