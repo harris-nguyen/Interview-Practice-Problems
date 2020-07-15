@@ -48,11 +48,15 @@ class HashTable {
 
 const myHashTable = new HashTable(10);
 console.log(myHashTable.set("grapes", 10000));
-console.log(myHashTable.set("grapes", 10000));
-console.log(myHashTable.get("grapes"));
+console.log(myHashTable.set("durian", 100));
 console.log(myHashTable.set("apples", 9));
+
+console.log(myHashTable.get("grapes"));
 console.log(myHashTable.get("apples"));
+
 console.log(myHashTable.keys());
+
+console.log(myHashTable);
 
 // Hash Table
 // space O(n)
