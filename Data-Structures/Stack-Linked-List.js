@@ -1,4 +1,5 @@
 // using LINKED LIST for STACK
+// FILO
 
 class Node {
   constructor(value) {
