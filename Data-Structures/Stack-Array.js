@@ -1,3 +1,4 @@
+// FILO
 class Stack {
   constructor() {
     this.array = [];
