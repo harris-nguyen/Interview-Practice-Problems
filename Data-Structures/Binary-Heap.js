@@ -8,3 +8,8 @@
 // populates left to right always
 
 // Priority Queue
+
+
+// slow lookup because it basically has to loop through everything
+
+// best to use when you're looking for the MAX
