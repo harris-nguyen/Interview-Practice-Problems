@@ -4,6 +4,8 @@
 // lookup, insert, & delete = O(log N)
 // you normally won't be asked to talk about delete in interviews
 
+// SHOULD KNOW THE BELOW LINKS BEFORE INTERVIEWS
+
 // AVL Tree
   //https://medium.com/basecs/the-little-avl-tree-that-could-86a3cae410c7
 
