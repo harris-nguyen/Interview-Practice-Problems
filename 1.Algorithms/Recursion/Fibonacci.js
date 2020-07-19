@@ -5,13 +5,30 @@
 
 //For example: fibonacciRecursive(6) should return 8
 
+// O(n)
 function fibonacciIterative(n) {
   //code here;
-}
-fibonacciIterative(3);
+  let arr = [0, 1];
 
+  for (let i = 2; i <= n; i++) {
+    arr.push(arr[i - 2] + arr[i - 1]);
+  }
+
+  return arr[n];
+}
+console.log(fibonacciIterative(6));
+
+// refer to image
+
+// as n changes to a higher number, more calls are being made:
+// O(2^N)   VERY SLOW
 function fibonacciRecursive(n) {
   //code here;
+  if (n < 2) {
+    return n;
+  }
+  console.log(n);
+  return fibonacciRecursive(n - 1) + fibonacciRecursive(n - 2);
 }
 
-fibonacciRecursive(3);
+console.log(fibonacciRecursive(6));
