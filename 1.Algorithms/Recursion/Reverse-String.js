@@ -32,16 +32,24 @@ console.log(reverseString("yoyo master"));
 reverseString("yoyo master");
 
 // recursion
+// medium.com/@sgee03/js-reverse-a-string-recursion-e442d0a056b7
 function reverseStringRecursive(str) {
   if (str === "") {
     return "";
   }
-    // substr: starting at
-    // charAt: index
-    console.log(str.substr(1))
-    console.log(str.charAt(0))
+  // this order is what reverses it str.substr(1)) + str.charAt(0)
+                             // ello, llo, lo, o   // h, e, l, l, o
   return reverseStringRecursive(str.substr(1)) + str.charAt(0);
 }
 
 
-reverseStringRecursive("yoyo master");
+console.log(reverseStringRecursive("hello"));
+
+// reverseStringRecursive('hello')
+// (reverseStringRecursive('ello') + 'h')
+// ((reverseStringRecursive('llo') + 'e') + 'h')
+// (((reverseStringRecursive('lo') + 'l') + 'e') + 'h')
+// ((((reverseStringRecursive('o') + 'l') + 'l' ) + 'e') + 'h')
+// (((('o') + 'l') + 'l' ) + 'e') + 'h')
+// base case string has no more letters to pluck out
+// return 'elloh'
