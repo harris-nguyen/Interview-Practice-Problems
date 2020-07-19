@@ -171,8 +171,12 @@ console.log(JSON.stringify(traverse(tree.root)));
 //1  6  15  70
 
 function traverse(node) {
-  const tree = { value: node.value };
+  const tree = {
+    value: node.value
+  };
+
   tree.left = node.left === null ? null : traverse(node.left);
   tree.right = node.right === null ? null : traverse(node.right);
+
   return tree;
 }
