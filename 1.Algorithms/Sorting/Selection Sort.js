@@ -1,10 +1,12 @@
 const numbers = [99, 44, 6, 2, 1, 5, 63, 87, 283, 4, 0];
 
+// O(n^2)
 function selectionSort(array) {
   const length = array.length;
 
   for (let i = 0; i < length; i++) {
     // set current index as minimum
+    // pay attention as we update minimum
 
     let min = i; // index
     let temp = array[i]; // [99, 44, 6, 2, 1, 5, 63, 87, 283, 4, 0]
