@@ -1,5 +1,6 @@
 const numbers = [99, 44, 6, 2, 1, 5, 63, 87, 283, 4, 0];
 // O(N^2)
+// rarely used. only used for educational use
 function bubbleSort(array) {
   const length = array.length;
 
