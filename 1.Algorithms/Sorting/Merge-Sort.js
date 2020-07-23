@@ -1,8 +1,10 @@
 const numbers = [99, 44, 6, 2, 1, 5, 63, 87, 283, 4, 0];
- // O(n log(n))
+ // O(n log(n)) fast
   // first n is bc we have to compare each one
     // rememver: (log n) is kind of like the height of the tree
- // best sorting type
+
+ // best sorting type after quick sorting. If quick sort is at it's worse O(n^2),
+    // then pick Merg sort
 
 // likely won't be asked to code in an interview but good to know the idea
 
