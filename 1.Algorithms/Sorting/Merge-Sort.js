@@ -1,5 +1,8 @@
 const numbers = [99, 44, 6, 2, 1, 5, 63, 87, 283, 4, 0];
  // O(n log(n)) fast
+
+// divide and conquer
+
   // first n is bc we have to compare each one
     // rememver: (log n) is kind of like the height of the tree
 
