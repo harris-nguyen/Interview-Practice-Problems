@@ -31,6 +31,8 @@ var majorityElement = function (nums) {
   }
   return max;
 };
+let given = [1,1,2,3,4,1,4,2,2,3,4,2,5,2]
+console.log(majorityElement(given)) // 2
 
 // ------------------------------------------------------------------------
 
