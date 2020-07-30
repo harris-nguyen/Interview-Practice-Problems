@@ -109,3 +109,42 @@ function multiplyBetween(num1, num2) {}
 // console.log(output); // --> 9
 
 function computeSumBetween(num1, num2) {}
+
+
+
+
+//
+function reverseInteger(num) {
+  let string = num.toString();
+  let daSplit = string.split("");
+  let newStr = "";
+
+  for (var i = daSplit.length - 1; i >= 0; i--) {
+    newStr += daSplit[i];
+  }
+  return Number(newStr);
+}
+
+let number = 12345;
+console.log(reverseInteger(number));
+
+//
+function removeDoubleChar(str) {
+
+  let obj = {}
+  let count = 0
+
+  for(let i = 0; i < str.length; i++){
+    if(!obj[str[i]]){
+      obj[str[i]] = count + 1
+    }
+  }
+
+  let arr = []
+  for(let key in obj){
+    arr.push(key)
+  }
+  return arr.join('')
+}
+
+console.log(removeDoubleChar("SSttrriinngg")); //➞ "SSttrriinngg"
