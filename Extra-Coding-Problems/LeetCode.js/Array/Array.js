@@ -64,3 +64,53 @@ var findDisappearedNumbers = function (nums) {
 let input = [4, 3, 2, 7, 8, 2, 3, 1]
 console.log(findDisappearedNumbers(input))
 // Output: [5, 6]
+
+// ------------------------------------------------------------------------
+
+var isHappy = function (n) {
+
+  let str = n.toString()
+  let toSplit = str.split('')
+  let arr = []
+
+  for(let i = 0; i < toSplit.length; i++){
+    let first = toSplit[i] * toSplit[i]
+    arr.push(first)
+  }
+  for(let i = 0; i < arr.length; i++){
+    return arr[i] + arr[i + 1]
+  }
+
+};
+
+let input = 29
+console.log(isHappy(input))
+// Explanation: 4 + 81 = 85
+
+// ------------------------------------------------------------------------
+
+var groupAnagrams = function (strs) {
+
+  let group = {}
+
+  for(let i = 0; i < strs.length; i++){
+    let sort = strs[i].split('').sort().join('')
+
+    if (!group[sort]){
+      group[sort] = [strs[i]]
+    } else {
+      group[sort].push(strs[i])
+    }
+  }
+
+  return Object.values(group)
+};
+
+let input = ["eta", "eat", "tea", "tan", "ate", "nat", "bat"]
+console.log(groupAnagrams(input))
+//   Output:
+// [
+//   ["ate", "eat", "tea"],
+//   ["nat", "tan"],
+//   ["bat"]
+// ]
