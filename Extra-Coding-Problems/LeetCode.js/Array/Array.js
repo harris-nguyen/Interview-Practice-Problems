@@ -1,12 +1,12 @@
 var runningSum = function (nums) {
-  let arr = [];
-  let sum = 0;
 
-  for (let i = 0; i < nums.length; i++) {
-    sum += nums[i];
-    arr.push(sum);
+  let arr = []
+
+  for(let i = 1; i < nums.length + 1; i++){
+    arr.push(i)
   }
-  return arr;
+return arr
+
 };
 let nums = [1, 1, 1, 1, 1];
 console.log(runningSum(nums));
@@ -69,18 +69,15 @@ console.log(findDisappearedNumbers(input))
 
 var isHappy = function (n) {
 
-  let str = n.toString()
-  let toSplit = str.split('')
-  let arr = []
+  let toSplit = n.toString().split('')
+  let sqr
+  let sum = 0
 
   for(let i = 0; i < toSplit.length; i++){
-    let first = toSplit[i] * toSplit[i]
-    arr.push(first)
+    sqr = toSplit[i] * toSplit[i]
+    sum += sqr
   }
-  for(let i = 0; i < arr.length; i++){
-    return arr[i] + arr[i + 1]
-  }
-
+  return sum
 };
 
 let input = 29
