@@ -31,6 +31,8 @@ var majorityElement = function (nums) {
   }
   return max;
 };
+let given = [1,1,2,3,4,1,4,2,2,3,4,2,5,2]
+console.log(majorityElement(given)) // 2
 
 // ------------------------------------------------------------------------
 
@@ -111,3 +113,48 @@ console.log(groupAnagrams(input))
 //   ["nat", "tan"],
 //   ["bat"]
 // ]
+
+// ------------------------------------------------------------------------
+
+var shuffle = function (nums, n) {
+
+  let arr = []
+
+  for (let i = 0; i < n; i++) {
+    arr.push(nums[i])
+    arr.push(nums[i + n])
+  }
+
+  return arr
+};
+
+let nums = [1, 2, 3, 4, 4, 3, 2, 1]
+let n = 4
+console.log(shuffle(nums, n))
+// Output: [1, 4, 2, 3, 3, 2, 4, 1]
+
+// ------------------------------------------------------------------------
+
+const smallerNumbersThanCurrent = nums => {
+  let result = [];
+  let count = 0;
+
+  for(let i = 0; i < nums.length;i++){
+    let first = nums[i]
+
+    for (let j = 0; j < nums.length; j++) {
+      let second = nums[j]
+
+      if(first > second){
+        count++
+      }
+    }
+    result.push(count)
+    count = 0 // by setting this, you are able to restart
+  }
+  return result
+};
+
+let nums = [8, 1, 2, 2, 3]
+console.log(smallerNumbersThanCurrent(nums))
+// Output: [4, 0, 1, 1, 3]
