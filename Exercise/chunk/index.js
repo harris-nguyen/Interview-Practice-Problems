@@ -7,13 +7,17 @@
 // chunk([1, 2, 3, 4, 5, 6, 7, 8], 3) --> [[ 1, 2, 3], [4, 5, 6], [7, 8]]
 // chunk([1, 2, 3, 4, 5], 4) --> [[ 1, 2, 3, 4], [5]]
 // chunk([1, 2, 3, 4, 5], 10) --> [[ 1, 2, 3, 4, 5]]
+// string.slice(start, end)
 
 function chunk(array, size) {
-  const chunked_arr = [];
-  let index = 0;
-  while (index < array.length) {
-    chunked_arr.push(array.slice(index, size + index));
-    index += size;
+  let arr = [];
+
+  for (let i = 0; i < array.length; i += size) {
+    // string.slice(start, end)
+    console.log(i);
+    console.log(size + i);
+    let chunk = array.slice(i, size + i); // size is increased by two from second loop
+    arr.push(chunk);
   }
-  return chunked_arr;
+  console.log(arr);
 }
