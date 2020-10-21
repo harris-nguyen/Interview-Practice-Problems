@@ -10,14 +10,6 @@
 // string.slice(start, end)
 
 function chunk(array, size) {
-  let arr = [];
 
-  for (let i = 0; i < array.length; i += size) {
-    // string.slice(start, end)
-    console.log(i);
-    console.log(size + i);
-    let chunk = array.slice(i, size + i); // size is increased by two from second loop
-    arr.push(chunk);
-  }
-  console.log(arr);
+
 }

@@ -9,12 +9,6 @@
 
 function palindrome(str) {
 
-  let original = str.split("").join("");
-  let reverseIt = str.split("").reverse().join("");
-  console.log(original);
-  console.log(reverseIt);
-
-  console.log(original === reverseIt);
 }
 
 module.exports = palindrome;

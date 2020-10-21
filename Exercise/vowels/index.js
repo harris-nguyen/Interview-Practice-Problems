@@ -9,22 +9,6 @@
 
 function vowels(str) {
 
-    let lowerCaseIt = str.toLowerCase();
-    let splitIt = lowerCaseIt.split("");
-    let count = 0;
-
-    for (let i = 0; i < splitIt.length; i++) {
-      if (
-        splitIt[i] === "a" ||
-        splitIt[i] === "e" ||
-        splitIt[i] === "i" ||
-        splitIt[i] === "o" ||
-        splitIt[i] === "u"
-      ) {
-        count++;
-      }
-    }
-    console.log(count);
 }
 
 module.exports = vowels;
