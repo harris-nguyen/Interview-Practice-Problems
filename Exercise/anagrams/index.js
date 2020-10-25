@@ -9,7 +9,10 @@
 //   anagrams('Hi there', 'Bye there') --> False
 //   Hint: special characters: /[^\w]/g
 
-function anagrams(stringA, stringB) {}
+function anagrams(stringA, stringB) {
+
+
+}
 
 
 module.exports = anagrams;
