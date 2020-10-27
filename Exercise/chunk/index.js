@@ -7,9 +7,7 @@
 // chunk([1, 2, 3, 4, 5, 6, 7, 8], 3) --> [[ 1, 2, 3], [4, 5, 6], [7, 8]]
 // chunk([1, 2, 3, 4, 5], 4) --> [[ 1, 2, 3, 4], [5]]
 // chunk([1, 2, 3, 4, 5], 10) --> [[ 1, 2, 3, 4, 5]]
+
+function chunk(array, size) {}
+
 // string.slice(start, end)
-
-function chunk(array, size) {
-
-
-}
