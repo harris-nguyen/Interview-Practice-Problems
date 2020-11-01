@@ -105,3 +105,9 @@ Hooks will not use classes.
 	-Initial Render
 	-Updates
 	-Unmount
+
+How do you normally debug?
+-console.log
+-Debugger statements
+-React Developer Tools within Chrome
+-useDebugValue/Inspect in Chrome
