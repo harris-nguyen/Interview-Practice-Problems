@@ -1,5 +1,13 @@
 REACT
 
+Additional readings:::
+https://medium.com/@vigowebs/frequently-asked-react-js-interview-questions-and-answers-36f3dd99f486
+
+https://medium.com/@vigowebs/frequently-asked-node-js-interview-questions-and-answers-b74fa1f20678
+
+https://medium.com/@coderacademy/15-seo-tips-every-front-end-developer-should-know-in-2016-d579b7cefb01
+
+
 Name Lifecycle Methods
 
 PART 1

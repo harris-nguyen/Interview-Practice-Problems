@@ -1,17 +1,18 @@
 var groupAnagrams = function (strs) {
   let group = {};
-
   for (let i = 0; i < strs.length; i++) {
-    let sort = strs[i].split("").sort().join("");
-
-    if (!group[sort]) {
-      group[sort] = [strs[i]];
+    let test = strs[i].split("").sort().join("");
+    if (!group[test]) {
+      group[test] = [strs[i]];
     } else {
-      group[sort].push(strs[i]);
+      group[test].push(strs[i]);
     }
   }
-
-  return Object.values(group);
+  let result = [];
+  for (let key in group) {
+    result.push(group[key]);
+  }
+  console.log(result);
 };
 
 let input = ["eta", "eat", "tea", "tan", "ate", "nat", "bat"];
