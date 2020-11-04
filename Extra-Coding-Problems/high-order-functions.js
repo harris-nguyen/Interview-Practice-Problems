@@ -1,3 +1,10 @@
+//  High Order Functions:
+// filter
+// forEach
+// map
+// reduce
+// https://www.freecodecamp.org/news/higher-order-functions-in-javascript-d9101f9cf528/#:~:text=In%20this%20article%20I%20will,map()%20and%20.
+
 let times = [
   {
     id: 10622,
