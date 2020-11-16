@@ -1,25 +1,25 @@
-var groupAnagrams = function (strs) {
-  let group = {};
-  for (let i = 0; i < strs.length; i++) {
-    let test = strs[i].split("").sort().join("");
-    if (!group[test]) {
-      group[test] = [strs[i]];
+function groupAnagrams(arr) {
+  let newArr = [];
+  let obj = {};
+
+  for (let i = 0; i < arr.length; i++) {
+    let sorted = arr[i].split("").sort().join("");
+
+    if (!obj[sorted]) {
+      obj[sorted] = [arr[i]];
     } else {
-      group[test].push(strs[i]);
+      obj[sorted].push(arr[i]);
     }
   }
-  let result = [];
-  for (let key in group) {
-    result.push(group[key]);
-  }
+  let result = Object.values(obj);
   console.log(result);
-};
-
-let input = ["eta", "eat", "tea", "tan", "ate", "nat", "bat"];
-console.log(groupAnagrams(input));
-//   Output:
+}
+// Input: ["eat", "tea", "tan", "ate", "nat", "bat"],
+// Output:
 // [
-//   ["ate", "eat", "tea"],
-//   ["nat", "tan"],
+//   ["ate","eat","tea"],
+//   ["nat","tan"],
 //   ["bat"]
 // ]
+
+groupAnagrams(["eat", "tea", "tan", "ate", "nat", "bat"]);
