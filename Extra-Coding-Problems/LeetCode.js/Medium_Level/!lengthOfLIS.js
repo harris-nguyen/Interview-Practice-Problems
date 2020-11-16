@@ -1,17 +1,22 @@
-var lengthOfLIS = function (nums) {
-  let dp = [];
-  for (let i = 0; i < nums.length; i++) {
-    dp[i] = 1;
-  }
 
-  for (let i = 1; i < nums.length; i++) {
-    for (let j = 0; j < nums.length; j++) {
-      if (nums[i] > nums[j]) {
-        dp[i] = dp[j] + 1;
+
+var lengthOfLIS = function (nums) {
+  let keepTrack = [];
+  for (let i = 0; i < nums.length; i++) {
+    keepTrack[i] = 1;
+  }
+  console.log(keepTrack);
+
+  for (let i = 0; i < nums.length; i++) {
+    let first = nums[i];
+    for (let j = 1; j < nums.length; j++) {
+      let second = nums[j];
+      if (first > second) {
+        keepTrack[i] = keepTrack[j] + 1;
       }
     }
   }
-  console.log(Math.max(...dp));
+  console.log(Math.max(...keepTrack));
 };
 lengthOfLIS([10, 9, 2, 5, 3, 7, 101, 18]);
 lengthOfLIS([1,2,3,4,5]);
