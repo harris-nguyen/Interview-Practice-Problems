@@ -20,7 +20,6 @@ function findMaxConsecutiveChar(str, char) {
   }
   console.log(maxCount);
 }
-
 let str = "aaabbaabbbaaaacdefgaaa";
 let char = "a";
 findMaxConsecutiveChar(str, char);
