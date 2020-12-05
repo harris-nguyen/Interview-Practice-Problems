@@ -7,6 +7,8 @@
 
 function firstUniqChar(str) {
 
+
+
 }
 
 firstUniqChar("leetcode"); // 0

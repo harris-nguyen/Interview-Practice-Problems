@@ -16,3 +16,4 @@ function threeConsecutiveOdds(arr) {
 }
 // threeConsecutiveOdds([1, 3, 4, 1]);
 threeConsecutiveOdds([1, 2, 34, 3, 4, 5, 7, 23, 12]);
+// return array of the 3
