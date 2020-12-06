@@ -1,5 +1,5 @@
 function groupAnagrams(arr) {
-  let newArr = [];
+
   let obj = {};
 
   for (let i = 0; i < arr.length; i++) {
