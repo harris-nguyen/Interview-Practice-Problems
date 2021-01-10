@@ -11,6 +11,21 @@
 // Hashtables and other collections, use and understanding
 
 // Basic thread concepts, basic thread concurrency, locking, etc
+  // Concurrency: In simple words, concurrency is the ability to run several programs or several parts of a program
+  //    in parallel. A Java application runs by default in one process. ...
+  //    Within a Java application you can work with many threads to achieve parallel processing or concurrency.
+//  - Java thread is like a virtual CPU that can execute inside your java app
+    // -A thread is actually a lightweight process. Unlike many other computer languages,
+    // Java provides built-in support for multithreaded programming. A multithreaded program
+    // contains two or more parts that can run concurrently. Each part of such a
+    // program is called thread and each thread defines a separate path of execution.
+//!! There are FOUR ways to specify how code should run:
+    // 1) Create a class which extends the thread class then override the run method
+    // 2) Create a class where runnable interface then pass an instance of the runnable to the constructor. Then when it is started,
+        // it would run the method of that runnable implementation
+    // 3) Create an anonymous implementation of the runnable interface which is similar to creating a class
+        // that implements the runnable interface
+    // 4) Create a java LAMP expression which also implements the runnable interface
 
 // Web security concepts and gotchas
 
@@ -19,5 +34,6 @@
 // Basic of SQL libraries in Java and basic use
 
 // T-SQL queries (selects, joins, etc)
+    // - Transact-SQL is Microsoft's and Sybase's proprietary extension to the SQL used to interact with relational databases
 
 // Basic front-end programming concepts (HTML, JS, etc)
