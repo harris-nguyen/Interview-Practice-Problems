@@ -34,6 +34,7 @@
 
 // Synchronizing Threads:
   // since start()/run() runs async with no guaranteed outcome, JOIN() is needed to run async while having a guaranteed outcome
+
   // The first method is join(). This method is called by a thread using another thread’s reference
     // when it wants to wait for that thread to terminate. This method throws an InterruptedException
     // when the thread that it is waiting for is interrupted by the interrupted() method
