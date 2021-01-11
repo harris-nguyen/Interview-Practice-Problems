@@ -1,4 +1,6 @@
 // Object Oriented are based on the concept of objects
+// Attributes or properties
+// funtions or methods
 
 // Object Oriented
 // - Abstraction
@@ -38,9 +40,8 @@
 // - Polymorph (many forms)
 //     - Git rid of long if and else or switch statements
 //     - Determines what should run while the program is running
-//     - Determines what function should run while the program is running
-//       - figured out during runtime. looks at what object it is pointed to then
-//       - looks at the method and if it's overwritten, it'll call the child object
+//       - figurs out during runtime. looks at what object it is pointed to then
+//         looks at the method and if it's overwritten, it'll call the child object
 
 //  - Encapsulation (the action of enclosing something in or as if in a capsule)
 //    - Built on the idea of data hiding
@@ -49,7 +50,7 @@
   //  - A group of relatable variables and functions into an unit/object
   //  - We refer to the variables as properties
   //  - We refer functions as methods
-  //  - Encapsulating our properties within the object
+  //  - Encapsulating our PROPERTIES within the object
 // ￼
 
 // Procedural Programming
