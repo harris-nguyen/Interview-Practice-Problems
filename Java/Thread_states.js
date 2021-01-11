@@ -9,6 +9,7 @@
 
 // !! no multiple-inheritance in Java !!
 
+// A constructor in Java is a special method that is used to initialize objects.
 
 // Thread states
 // The java.lang.Thread class contains a static State enum — which defines its potential states. The thread can only be in one of these states at a time:

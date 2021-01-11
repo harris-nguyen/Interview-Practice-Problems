@@ -1,16 +1,18 @@
 // Java syntax at a basic level
 
-// Solid understanding of object oriented principles (important)
+// Solid understanding of object oriented principles (important)  //
 
-// Value vs reference in Java
+// Value vs reference in Java //
+
 //    - When you pass a primitive value into a function as an argument,
 //      you make a copy of it and the original variable is unaffected when you pass an object
 //    - When you pass an object into the function, you're passing just a reference and if you change that object
 //      in that function, it is also changed as well
 
-// Hashtables and other collections, use and understanding
+// Hashtables and other collections, use and understanding //
 
-// Basic thread concepts, basic thread concurrency, locking, etc
+// Basic thread concepts, basic thread concurrency, locking, etc //
+
   // Concurrency: In simple words, concurrency is the ability to run several programs or several parts of a program
   //    in parallel. A Java application runs by default in one process. ...
   //    Within a Java application you can work with many threads to achieve parallel processing or concurrency.
@@ -27,13 +29,13 @@
         // that implements the runnable interface
     // 4) Create a java LAMP expression which also implements the runnable interface
 
-// Web security concepts and gotchas
+// Web security concepts and gotchas //
 
-// REST API concepts
+// REST API concepts //
 
-// Basic of SQL libraries in Java and basic use
+// Basic of SQL libraries in Java and basic use //
 
-// T-SQL queries (selects, joins, etc)
+// T-SQL queries (selects, joins, etc) //
     // - Transact-SQL is Microsoft's and Sybase's proprietary extension to the SQL used to interact with relational databases
 
-// Basic front-end programming concepts (HTML, JS, etc)
+// Basic front-end programming concepts (HTML, JS, etc) //
