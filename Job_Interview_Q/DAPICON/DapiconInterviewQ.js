@@ -4,7 +4,7 @@
 
 // Value vs reference in Java //
 
-//    - When you pass a primitive value into a function as an argument,
+//    - When you pass a primitive value (int, byte, short, long, float, double, boolean, and char) into a function as an argument,
 //      you make a copy of it and the original variable is unaffected when you pass an object
 //    - When you pass an object into the function, you're passing just a reference and if you change that object
 //      in that function, it is also changed as well
@@ -21,6 +21,7 @@
     // Java provides built-in support for multithreaded programming. A multithreaded program
     // contains two or more parts that can run concurrently. Each part of such a
     // program is called thread and each thread defines a separate path of execution.
+
 //!! There are FOUR ways to specify how code should run:
     // 1) Create a class which extends the thread class then override the run method
     // 2) Create a class where runnable interface then pass an instance of the runnable to the constructor. Then when it is started,

@@ -10,7 +10,7 @@
     // - list
     // - queue
 
-// A set is defined as a grouop of unique objects. What is ocnsidred as unique is defined
+// A set is defined as a grouop of unique objects. What is considered as unique is defined
 // by the equals method of the Object typeof. A sen can NOT hold two equal objects. No duplicates
 
 // A List can contain duplicates. A list keeps its elements in the order they were inputed
@@ -29,8 +29,8 @@
 // - NavigableSet - has navigation methods that give closest matches such as floor, ceiling, lower and higher.
 
 // LIST
-// - ArrayList - dynamic. it does allow duplicates and allows to iterate the list in the order of insertion. Non-synchronized.
 // - Fast to iterate and read BUT add or removing will be slow as this will require to rebuild the whole array
+// - ArrayList - dynamic. it does allow duplicates and allows to iterate the list in the order of insertion. Non-synchronized.
 // - Vector - The difference between a Vector an ArrayList is that Vectors are synchronized.
 // - LinkedList - makes it easy to add or remove elements at any position
     // data structure, where every element has a pointer to the next element forming a link. Since each
@@ -44,14 +44,16 @@
       // You can visualize it as a stack of books on a table the book that is kept first has to e retrieved last,
       // and the book that is kept on the stack last has to be retrieved first. The basic methods
       // of the stack class are push, pop, peek, empty, and search
-// - QUEUE -  (FIFO)
 
-// QUEUE
+// QUEUE - (FIFO)
 // - LinkedList - default for Queue. makes it easy to add or remove elements at any position
 // - PriorityQueue - Keeps its elements automatically ordered. similar to treeSet but it alows duplicates
 
 // MAP interface - maps a key to every value. No duplicates
-// Has three different views, a Set view of the keys, a Set view of key-value mappings, and a Collection view of the value
+// Has three different views,
+      // a Set view of the keys,
+      // a Set view of key-value mappings
+      // a Collection view of the value
 // - LinkedHashMap - is a hash map linked list implementation of a map. Every entry in the LinkedHashMap has a doubly-linked
     // list running through it. This linked list defines the iteration order that is the order of the keys inserted into the
     // LinkedHashMap. Like all implementations of Map, the elements of the LinkedHashMap are key-value pairs.
