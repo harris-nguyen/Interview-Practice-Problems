@@ -11,7 +11,7 @@
     // - queue
 
 // A set is defined as a grouop of unique objects. What is considered as unique is defined
-// by the equals method of the Object typeof. A sen can NOT hold two equal objects. No duplicates
+// by the equals method of the Object typeof. can NOT hold two equal objects. No duplicates
 
 // A List can contain duplicates. A list keeps its elements in the order they were inputed
 
@@ -20,6 +20,7 @@
 // https://www.geeksforgeeks.org/how-to-learn-java-collections-a-complete-guide/
 
 // SET
+// Non-Abstract Classes::
 // - A collection of OBJECTS and no duplicate objects are allowed. The Set allows at most one null element.
 // - HashSet - it takes constant time for basic operations like insert, deletes, and search.
       // the order of the elements may not be the same as the order of insertion. normally the default for set
@@ -29,6 +30,7 @@
 // - NavigableSet - has navigation methods that give closest matches such as floor, ceiling, lower and higher.
 
 // LIST
+// Non-Abstract Classes::
 // - Fast to iterate and read BUT add or removing will be slow as this will require to rebuild the whole array
 // - ArrayList - dynamic. it does allow duplicates and allows to iterate the list in the order of insertion. Non-synchronized.
 // - Vector - The difference between a Vector an ArrayList is that Vectors are synchronized.
@@ -46,8 +48,9 @@
       // of the stack class are push, pop, peek, empty, and search
 
 // QUEUE - (FIFO)
+// Non-Abstract Classes::
 // - LinkedList - default for Queue. makes it easy to add or remove elements at any position
-// - PriorityQueue - Keeps its elements automatically ordered. similar to treeSet but it alows duplicates
+// - PriorityQueue - Keeps its elements automatically ordered. similar to treeSet but it allows duplicates
 
 // MAP interface - maps a key to every value. No duplicates
 // Has three different views,
@@ -58,7 +61,7 @@
     // list running through it. This linked list defines the iteration order that is the order of the keys inserted into the
     // LinkedHashMap. Like all implementations of Map, the elements of the LinkedHashMap are key-value pairs.
 // - SortedMap - sorted map
-// - NavigableMap - adds methods to negigate thrugh the map. Allos you to retrieve all entries bigger or smaller for example
+// - NavigableMap - adds methods to negigate thrugh the map. Allows you to retrieve all entries bigger or smaller for example
 // - TreeMap - The TreeMap class uses a red-black tree structure for storage and a map for ordering the elements. Every element
     // is a key-value pair. This implementation gives a guaranteed log(n) time cost for basic operations.
 // - Hashmap - For every entry in a HashMap, a hashCode is computed and this entry is inserted into the bucket with the
