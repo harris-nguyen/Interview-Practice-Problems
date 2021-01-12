@@ -7,7 +7,8 @@
 // by its start() method, otherwise the work is not forked in a different thread.
 
 
-// !! no multiple-inheritance in Java !!
+// !! no multiple-inheritance in Java
+// !!
 
 // A constructor in Java is a special method that is used to initialize objects.
 
