@@ -35,6 +35,11 @@
 // REST API concepts //
 
 // Basic of SQL libraries in Java and basic use //
+  // https://www.marcobehler.com/guides/java-databases
+  // it connects your Java application to a database
+  // example... to connect to your database and generate Java classes that model your database tables and columns.
+  // JDBC, Hibernate, JPA, jOOQ, Spring Data and more.
+      // jOOQ - generates Java code from your database and lets you build type safe SQL queries through its fluent API.
 
 // T-SQL queries (selects, joins, etc) //
     // - Transact-SQL is Microsoft's and Sybase's proprietary extension to the SQL used to interact with relational databases
