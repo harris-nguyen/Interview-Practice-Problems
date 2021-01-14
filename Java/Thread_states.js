@@ -34,7 +34,8 @@
                     // until it is opened by the thread that had closed it. Managing these operations is by using the synchronized construct
 
 // Synchronizing Threads:
-  // since start()/run() runs async with no guaranteed outcome, JOIN() is needed to run async while having a guaranteed outcome
+  // !since start()/run() runs async with no guaranteed outcome, JOIN() is needed to run async while having a guaranteed outcome
+
 
   // The first method is join(). This method is called by a thread using another thread’s reference
     // when it wants to wait for that thread to terminate. This method throws an InterruptedException
