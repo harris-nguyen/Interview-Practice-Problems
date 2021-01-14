@@ -1,4 +1,5 @@
 // Introduction
+
 // Collections in Java is a framework that provides architecture to store and manipulate data.
 
 // collection sits on top of the sub interfaces and implementing classes.Seta collection can hoold a group of objects
