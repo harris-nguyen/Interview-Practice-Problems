@@ -19,14 +19,14 @@
 //     Given what we know about XSS, you can imagine how bad this could be.
 
 // - HTTP Strict-Transport-Security (HSTS)
-//     strict-transport-security: max-age=15552000; preload ===> max-age specifies how long a browser should remember to force the user to access a website using HTTPS.
-//     ^ This header only applies if you accessed the site using HTTPS.
-//       If you accessed the site via HTTP,
-//       the header is ignored. The reason is that, quite simply, HTTP is so insecure that it can’t be trusted.
-//       Let’s use the Facebook example to further illustrate how this is helpful in practice. You are accessing
-//       facebook.com for the first time, and you know HTTPS is safer than HTTP, so you access it over HTTPS,
-//       https://facebook.com. When your browser receives the HTML, it receives the header above which tells
-//       your browser to force-redirect you to HTTPS for future requests. One month later, someone sends you a
-//       link to Facebook using HTTP, http://facebook.com, and you click on it. Since one month is less than the
-//       15552000 seconds specified by the max-age directive, your browser will send the request as HTTPS,
-//       preventing a potential MITM (Man in the Middle) attack.
+  // strict-transport-security: max-age=15552000; preload ===> max-age specifies how long a browser should remember to force the user to access a website using HTTPS.
+  // ^ This header only applies if you accessed the site using HTTPS.
+  //   If you accessed the site via HTTP,
+  //   the header is ignored. The reason is that, quite simply, HTTP is so insecure that it can’t be trusted.
+  //   Let’s use the Facebook example to further illustrate how this is helpful in practice. You are accessing
+  //   facebook.com for the first time, and you know HTTPS is safer than HTTP, so you access it over HTTPS,
+  //   https://facebook.com. When your browser receives the HTML, it receives the header above which tells
+  //   your browser to force-redirect you to HTTPS for future requests. One month later, someone sends you a
+  //   link to Facebook using HTTP, http://facebook.com, and you click on it. Since one month is less than the
+  //   15552000 seconds specified by the max-age directive, your browser will send the request as HTTPS,
+  //   preventing a potential MITM (Man in the Middle) attack.

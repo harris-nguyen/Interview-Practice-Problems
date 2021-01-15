@@ -51,7 +51,6 @@
   //  - We refer to the variables as properties
   //  - We refer functions as methods
   //  - Encapsulating our PROPERTIES within the object
-// ￼
 
 // Procedural Programming
 // - Divides a program into different functions
