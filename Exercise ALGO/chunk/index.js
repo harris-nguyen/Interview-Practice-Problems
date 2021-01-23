@@ -2,11 +2,11 @@
 // Given an array and chunk size, divide the array into many subarrays
 // where each subarray is of length size
 // --- Examples
-// chunk([1, 2, 3, 4], 2) --> [[ 1, 2], [3, 4]]
-// chunk([1, 2, 3, 4, 5], 2) --> [[ 1, 2], [3, 4], [5]]
-// chunk([1, 2, 3, 4, 5, 6, 7, 8], 3) --> [[ 1, 2, 3], [4, 5, 6], [7, 8]]
-// chunk([1, 2, 3, 4, 5], 4) --> [[ 1, 2, 3, 4], [5]]
-// chunk([1, 2, 3, 4, 5], 10) --> [[ 1, 2, 3, 4, 5]]
+// chunk([a, b, c, d], 2) --> [[ a, b], [c, d]]
+// chunk([a, b, c, d, e], 2) --> [[ a, b], [c, d], [e]]
+// chunk([a, b, c, d, e, f, g, h], 3) --> [[ a,b,c], [d, e, f], [g, h]]
+// chunk([a, b, c, d, e], 4) --> [[ a, b, d, e], [f]]
+// chunk([ a, b, c, d, e], 10) --> [[ a, b, c, d, e]]
 
 function chunk(array, size) {}
 
